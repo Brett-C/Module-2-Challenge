@@ -1,61 +1,90 @@
 
-body {
-    font-family: Arial;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-  }
+ body{
+  display: flex;
+  flex-direction: column;
+ }
+ nav{
+  display: flex;
+  justify-content: right;
+ }
+ nav h3{
+  margin: 20px;  
+ }
+.profile-picture{
+  border-radius: 25%;
+  max-width: 300px;
+  max-height: auto;
+}
+.section-1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 20px;
+  border: solid 2px black;
+
+}
+.title{
+  margin: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 25%;
+  border: solid 1px black;
   
-
-.header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    padding: 20px;
-    background-color:#2BAD4E;
-    color: #AD1A1E;
+}
+.content{
+  margin: 20px;
+  flex: 1;
 }
 
-.div-head {
-
-    max-width: 50%;
+.project{
+  display: flex;
+  flex-grow: 1;
+  border: solid 2px black;
+  margin:20px;
 }
 
-.header h3 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 15px;
-    padding: 15px;
-    align-content: center;
+.project > .apps-a, .apps-b {
+  flex-wrap: wrap;
+  width: 75%;
+}
+.title-p{
+  margin: 20px;
+  width: 33%;
+  border: solid 1px black;
 }
 
+.apps-a{
+  display: flex;
+}
+.apps-b{
+  display: flex;
+
+}
 .app {
     border-style: solid;
-    border-width: 1px; 
+    border-width: 1px;
+    flex-wrap: wrap; 
     padding: 10px;
-    flex: 0 0 300px;
+    flex: 4;
     margin: 20px;
+    justify-content: space-evenly;
   }
 
-  .card {
-    flex: 4;
-    background-color: #fff;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+  .contact-me{
+    border: solid 2px black;
+    margin:20px;
+  
   }
-@media screen and (min-width: 768px){
-.project {
- width:100%;
- }
-    
+.title-c{
+  margin: 20px;
+  width: 25%;
+  align-items: center;
+  border: solid 1px black;
+
 }
-@media screen and (max-width: 992px) {
-    .project {
-      width: 50%;
-    }
-}
+  .content-c, .content-c p{
+    display:flex;
+    justify-content: right;
+    margin:20px;
+  }
+
