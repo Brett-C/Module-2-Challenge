@@ -7,9 +7,18 @@
   display: flex;
   justify-content: right;
  }
- nav h3{
+
+ /* Nav Bar Styling */
+ nav a{
   margin: 20px;  
+  color: black;
+  text-decoration: none;
+
  }
+ .header-name{
+  text-align: center;
+ }
+ /* profile picture styling */
 .profile-picture{
   border-radius: 25%;
   max-width: 300px;
@@ -20,7 +29,7 @@
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 20px;
-  border: solid 2px black;
+  border: dashed .5px black;
 
 }
 .title{
@@ -28,7 +37,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 25%;
-  border: solid 1px black;
+  border-right: solid 3px black;
   
 }
 .content{
@@ -39,7 +48,7 @@
 .project{
   display: flex;
   flex-grow: 1;
-  border: solid 2px black;
+  border: dashed .5px black;
   margin:20px;
 }
 
@@ -50,14 +59,16 @@
 .title-p{
   margin: 20px;
   width: 33%;
-  border: solid 1px black;
+  border-right: solid 3px black;
 }
 
 .apps-a{
   display: flex;
+  flex-wrap: wrap;
 }
 .apps-b{
   display: flex;
+  flex-wrap: wrap;
 
 }
 .app {
@@ -71,20 +82,34 @@
   }
 
   .contact-me{
-    border: solid 2px black;
+    border: dashed .5px black;
     margin:20px;
+    display: flex;
   
   }
 .title-c{
   margin: 20px;
   width: 25%;
   align-items: center;
-  border: solid 1px black;
+  border-right: solid 3px black;
 
 }
-  .content-c, .content-c p{
+  .content-c, .content-c p, .content-c a {
     display:flex;
-    justify-content: right;
+    justify-content: space-evenly;
     margin:20px;
+    color: black;
+  text-decoration: none;
+
   }
 
+/* @media screen and (max-width: 700px) {
+  .apps-a, .apps-b {
+    flex-direction: column;
+  }
+} */
+@media screen and (max-width: 860px) { 
+  .project{
+    flex-wrap: wrap;
+  }
+  }
