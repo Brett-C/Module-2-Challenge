@@ -33,11 +33,7 @@ footer{
   padding:25px;
 }
 .header-name {
-  font-size: 50px;
-  
-}
-.app img{
-  justify-content: center;
+  font-size: 50px;  
 }
 
 /* profile picture styling */
@@ -53,9 +49,8 @@ footer{
 .section-1 {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
   margin: 20px;
-  /* border: dashed .5px black; */
+
 
 }
 
@@ -75,7 +70,6 @@ footer{
 
 .project {
   display: flex;
-  /* border: dashed .5px black; */
   margin: 20px;
 
 }
@@ -84,7 +78,6 @@ footer{
 .apps-b {
   flex-wrap: wrap;
   flex:1;
-  /* width: 50%; */
 
 }
 
@@ -101,18 +94,13 @@ footer{
   padding-right: 20px;
 }
 
-.apps-a {
+.apps-a, .apps-b {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
 
 }
 
-.apps-b {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
 .apps-b p, .apps-a p {
   text-align: left;
 }
@@ -128,7 +116,6 @@ footer{
 }
 
 .contact-me {
-  /* border: dashed .5px black; */
   margin: 20px;
   display: flex;
 }
@@ -159,36 +146,22 @@ footer{
   padding:20px;
 }
 
-/* @media screen and (max-width: 700px) {
-  .apps-a, .apps-b {
-    flex-direction: column;
-  }
-} */
 @media screen and (max-width: 860px) {
 
-  nav,
-  .project,
-  .header-name,
-  .profile-picture {
+  .project
+   {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .section-1{
-    flex-wrap: wrap;
-    justify-content: center;
-
-  }
-  header {
-    text-align: center;
+ .title-p{
+  border: none;
  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
 
-  /* .contact-me */
+
   .content-c
-  /* .content-p,  */
-  /* .title-c */
   {
     flex-direction: column;
     justify-content: center;
@@ -205,18 +178,12 @@ footer{
   }
   .title-c, .title-p, .title {
     border: none;
+    text-align: center;
     }
     .project-container{
       flex-direction: column;
     }
-    .project {
-      text-align: center;
-  
-    }
     .title-p{
       width: 100%;
-    }
-    .title-c{
-      text-align: center;
     }
 }
