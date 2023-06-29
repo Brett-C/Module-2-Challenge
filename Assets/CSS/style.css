@@ -63,6 +63,7 @@ footer{
 
 }
 
+
 .content {
   margin: 20px;
   flex: 1;
@@ -72,6 +73,11 @@ footer{
   display: flex;
   margin: 20px;
 
+}
+.app:hover {
+
+box-shadow: #234E70 5px 5px 5px 5px;
+transition: all .3s ease-in-out;
 }
 
 .apps-a, 
