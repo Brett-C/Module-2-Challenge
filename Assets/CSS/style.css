@@ -74,11 +74,7 @@ footer{
   margin: 20px;
 
 }
-.app:hover {
 
-box-shadow: #234E70 5px 5px 5px 5px;
-transition: all .3s ease-in-out;
-}
 
 .apps-a, 
 .apps-b {
@@ -120,6 +116,10 @@ transition: all .3s ease-in-out;
   margin: 20px;
   justify-content: space-evenly;
 }
+.app:hover {
+  box-shadow: #234E70 5px 5px 5px 5px;
+  transition: all .3s ease-in-out;
+  }
 
 .contact-me {
   margin: 20px;
@@ -162,6 +162,10 @@ transition: all .3s ease-in-out;
  .title-p{
   border: none;
  }
+ .app:hover {
+  box-shadow: #234E70 5px 5px 5px 5px;
+  transition: all .3s ease-in-out;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -192,4 +196,8 @@ transition: all .3s ease-in-out;
     .title-p{
       width: 100%;
     }
+    .app:hover {
+      box-shadow: #234E70 5px 5px 5px 5px;
+      transition: all .3s ease-in-out;
+      }
 }
